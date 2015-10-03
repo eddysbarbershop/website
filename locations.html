@@ -7,6 +7,21 @@
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="eddys.css" rel="stylesheet" type="text/css">
+    <script>
+      (function(){
+                $(window).scroll(function() {
+        
+                    // check if window scroll for more than 430px. May vary
+                    // as per the height of your main banner.
+        
+                    if($(this).scrollTop() > 50) { 
+                        $('.navbar').addClass('opaque'); // adding the opaque class
+                    } else {
+                        $('.navbar').removeClass('opaque'); // removing the opaque class
+                    }
+                });
+              })();
+    </script>    
   </head><body>
     <div class="cover">
       <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
