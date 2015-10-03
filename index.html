@@ -1,0 +1,164 @@
+<html><head>
+    <meta name="keywords" content="Eddy's Barbershop, Cleveland barber, Coventry barber, Cleveland barbershop">
+    <title>Eddys' Barbershop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="eddys.css" rel="stylesheet" type="text/css">
+    <script>
+      (function(){
+        $(window).scroll(function() {
+
+            // check if window scroll for more than 430px. May vary
+            // as per the height of your main banner.
+
+            if($(this).scrollTop() > 230) { 
+                $('.navbar').addClass('opaque'); // adding the opaque class
+            } else {
+                $('.navbar').removeClass('opaque'); // removing the opaque class
+            }
+        });
+      })();
+    </script>
+  </head><body>
+    <div class="cover">
+      <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="hidden-sm hidden-xs navbar-brand" href="#"><img alt="Brand" src="/Users/orion/Desktop/eddys/eddys_circle_white_nav.png" height="40"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="#barbers">BARBERS</a>
+              </li>
+              <li class="">
+                <a href="locations.html">LOCATIONS</a>
+              </li>
+            </ul>
+            <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color: white;margin-top:10px;opacity: 1">216.795.5185</a>
+          </div>
+        </div>
+      </div>
+      <div class="cover-image" style="box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); background-image : url('/Users/orion/Desktop/eddys/10860852_651481598307714_7141937238448063003_o.jpg')"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="/Users/orion/Desktop/eddys/eddys_white_lrg.png" class="img-responsive">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-6" style="padding-top:40px">
+            <h2 class="bookbox text-center text-primary">BOOK NOW</h2>
+            <a class="btn btn-block btn-primary locationbutton" style="background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking">COVENTRY</a>
+            <a class="btn btn-block btn-link disabled" data-target="#booking">NEW LOCATION COMING SOON!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="booking">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title" id="myModalLabel">
+              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT COVENTRY (216.795.5185)</h2>
+          </div>
+          <div class="modal-body">
+            <!-- Start Square Appointments Embed Code -->
+            <script src="https://squareup.com/appointments/buyer/widget/da8b8069-18e4-4892-a7be-98087b49eeee.js"></script>
+            <!-- End Square Appointments EmbedCode -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="barbers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">MEET YOUR BARBERS</h1>
+            <p class="text-center">.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../testchuck.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+            <h3 class="text-center">CHUCK FALK</h3>
+            <p class="text-center">MASTER BARBER</p>
+          </div>
+          <div class="col-md-3">
+            <img src="../testryan.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+            <h3 class="text-center">RYAN HARDWICK&nbsp;</h3>
+            <p class="text-center">MASTER BARBER</p>
+          </div>
+          <div class="col-md-3">
+            <img src="../testbobby.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+            <h3 class="text-center">BOBBY JACKSON</h3>
+            <p class="text-center">MASTER BARBER</p>
+          </div>
+          <div class="col-md-3">
+            <img src="../testpatrick.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+            <h3 class="text-center">PATRICK CORRIGAN</h3>
+            <p class="text-center">MASTER BARBER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>EDDY'S</h1>
+            <p>Eddy's Barbershop is an affordable mens salon, with locations on the&nbsp;
+              <br>east side of Cleveland in the&nbsp;Coventry neighborhood and a soon-to-be
+              <br>announced location on the west side.
+              <br>
+              <br>The team of barbers,&nbsp;led by Chuck Falk, are experts in their field
+              with&nbsp;
+              <br>years of experience. Men can stop in for a quick cut or relax and enjoy&nbsp;
+              <br>with a 45-minute old-fashion&nbsp;shave.</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-right footersocial">
+              <br>GET AT US, BE SOCIAL</p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="https://www.facebook.com/Eddys-Barbershop-577093205746554/"><i class="fa fa-3x fa-facebook fa-fw text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                <i class="fa fa-3x fa-fw fa-copyright"></i>
+              </div>
+              <div class="col-md-11">
+                <p>2015-2016 EDDYS BARBERSHOP
+                  <br>design by
+                  <a href="http://redband.digital" target="_blank"><span style="color:#D0412F">redband.digital</span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
