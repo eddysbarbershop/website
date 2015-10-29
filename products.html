@@ -1,305 +1,305 @@
 <html><head>
-    <link rel="icon" href="favicon.ico">
-    <meta name="keywords" content="Eddy's Barbershop, Cleveland barber, Coventry barber, Cleveland barbershop">
-    <title>Eddy's Barbershop</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="eddys.css" rel="stylesheet" type="text/css">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                      ga('create', 'UA-68950894-1', 'auto');
-                      ga('send', 'pageview');
-    </script>
-    <script>
-      (function(){
-                                                        $(window).scroll(function() {
-
-                                                            // check if window scroll for more than 430px. May vary
-                                                            // as per the height of your main banner.
-
-                                                            if($(this).scrollTop() > 50) {
-                                                                $('.navbar').addClass('opaque'); // adding the opaque class
-                                                              	$('.navbar-collapse').addClass('barT');
-                                                                $('#navImg').attr('src','img/eddys_circle_black_nav.png').fadeTo(400,1);
-                                                              	$('#navPh').css('color','black').fadeTo(400,1);
-                                        						$('#navBk').css('display','inline-block');
-                                                            } else {
-                                                                $('.navbar').removeClass('opaque'); // removing the opaque class
-                                                              	$('.navbar-collapse').removeClass('barT');
-                                                                $('#navImg').attr('src','img/eddys_circle_white_nav.png').fadeTo(400,1);
-                                                              	$('#navPh').css('color','white').fadeTo(400,1);
-                                                              	$('#navBk').css('display','none');
-                                                            }
-                                                        });
-                                                      })();
-    </script>
-  </head><body>
-    <div class="cover">
-      <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="hidden-sm hidden-xs navbar-brand" href="index.html"><img alt="Brand" src="img/eddys_circle_white_nav.png" height="40" id="navImg"></a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-            <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
-              <li class="active">
-                <a href="index.html#barbers">BARBERS</a>
-              </li>
-              <li class="">
-                <a href="locations.html">LOCATIONS</a>
-              </li>
-              <li class="">
-                <a href="products.html">PRODUCTS</a>
-              </li>
-            </ul>
-            <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color: white;margin-top:10px;opacity: 1" id="navPh">216.795.5185</a>
-            <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
-          </div>
-        </div>
-      </div>
-      <div class="cover-image" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);background-image : url('img/products_cover')"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="text-primary">
-                      <h1>PRODUCTS&nbsp;</h1>
-                      <h3>Subtext</h3>
+        <link rel="icon" href="favicon.ico">
+        <meta name="keywords" content="Eddy's Barbershop, Cleveland barber, Coventry barber, Cleveland barbershop">
+        <title>Eddy's Barbershop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="eddys.css" rel="stylesheet" type="text/css">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+                              ga('create', 'UA-68950894-1', 'auto');
+                              ga('send', 'pageview');
+        </script>
+        <script>
+            (function(){
+                                                                $(window).scroll(function() {
+        
+                                                                    // check if window scroll for more than 430px. May vary
+                                                                    // as per the height of your main banner.
+        
+                                                                    if($(this).scrollTop() > 50) {
+                                                                        $('.navbar').addClass('opaque'); // adding the opaque class
+                                                                      	$('.navbar-collapse').addClass('barT');
+                                                                        $('#navImg').attr('src','img/eddys_circle_black_nav.png').fadeTo(400,1);
+                                                                      	$('#navPh').css('color','black').fadeTo(400,1);
+                                                						$('#navBk').css('display','inline-block');
+                                                                    } else {
+                                                                        $('.navbar').removeClass('opaque'); // removing the opaque class
+                                                                      	$('.navbar-collapse').removeClass('barT');
+                                                                        $('#navImg').attr('src','img/eddys_circle_white_nav.png').fadeTo(400,1);
+                                                                      	$('#navPh').css('color','white').fadeTo(400,1);
+                                                                      	$('#navBk').css('display','none');
+                                                                    }
+                                                                });
+                                                              })();
+        </script>
+    </head><body>
+        <div class="cover">
+            <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="hidden-sm hidden-xs navbar-brand" href="index.html"><img alt="Brand" src="img/eddys_circle_white_nav.png" height="40" id="navImg"></a>
                     </div>
-                  </div>
+                    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                        <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
+                            <li class="active">
+                                <a href="index.html#barbers">BARBERS</a>
+                            </li>
+                            <li class="">
+                                <a href="locations.html">LOCATIONS</a>
+                            </li>
+                            <li class="">
+                                <a href="products.html">PRODUCTS</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color: white;margin-top:10px;opacity: 1" id="navPh">216.795.5185</a>
+                        <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>BAXTER OF CALIFORNIA</h1>
-            <h3>GROOMING GENERATIONS OF GENTLEMEN</h3>
-            <p>One of the original men's grooming brands created by Baxter Finley in
-              1965. Cutting edge for its time, it started with a single product: Super
-              Shape, a men's skin conditioner that offered protection from the sun and
-              sea. This gender-specific breakthrough was no gimmick. Suddenly, guys got
-              grooming. In the years since then, Baxter of California pioneered a comprehensive
-              range of products tailored to a man’s needs. Years of research by our experts
-              proved that all skin is not created equal. Our approach is science plus
-              nature, built from the ground up in California. We may be old school in
-              concept, but we’re high-tech in practice. Bottom line: Finley’s dry skin
-              began a revolution. Baxter’s legacy meets advanced research: this is the
-              evolution of men’s grooming.</p>
-          </div>
-          <div class="col-md-3">
-            <ul class="list-group" style="border: 0px">
-              <li class="list-group-item" contenteditable="true">Baxter After Shave Balm
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Anniversary Set
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Clay Pomade
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Daily Protein Shampoo
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Deodorant
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Smoke Ash Candle
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Soap Bar
-                <span style="float:right">$18</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="list-group">
-              <li class="list-group-item" contenteditable="true">Baxter Hard Cream Pomade
-                <span style="float:right">$20</span>
-              </li>
-              <li class="list-group-item">Baxter Moisturizing Conditioner
-                <span style="float:right">$17</span>
-              </li>
-              <li class="list-group-item">Baxter Shave Brush
-                <span style="float:right">$50</span>
-              </li>
-              <li class="list-group-item">Baxter Shave Kit
-                <span style="float:right">$72</span>
-              </li>
-              <li class="list-group-item">Baxter Shave Tonic
-                <span style="float:right">$15</span>
-              </li>
-              <li class="list-group-item">Baxter Super Close Shave Formula
-                <span style="float:right">$18</span>
-              </li>
-              <li class="list-group-item">Baxter Travel Kit
-                <span style="float:right">$50</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="lead list-group">
-              <li class="list-group-item">Layrite Cement
-                <span style="float:right">$19</span>
-              </li>
-              <li class="list-group-item">Layrite Grooming Spray
-                <span style="float:right">$10</span>
-              </li>
-              <li class="list-group-item">Layrite Original
-                <span style="float:right">$15</span>
-              </li>
-              <li class="list-group-item">Layrite Super Hold
-                <span style="float:right">$16</span>
-              </li>
-              <li class="list-group-item">Mini Layrite 1 oz
-                <span style="float:right">$18</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h1>LAYRITE</h1>
-            <h3>FINE GROOMING PRODUCTS</h3>
-            <p>Every product that Layrite has created since it's first shop opened in
-              1999 on has been produced with the customers’ feedback in mind. As a result,
-              Layrite has become an American Fine Men’s Grooming Product company with
-              a main focus on providing a “modernly classic” grooming product line. Today,
-              Layrite resides in Orange County, California. All products are tested and
-              approved by barbers in order to provide Layrite customers with only the
-              finest pomades and grooming products. So, now that you know the story of
-              how Layrite was born, you can experience for yourself the deluxe pomade
-              that holds like wax and washes out like gel. Create the perfect style everytime.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>OTHER PRODUCTS</h1>
-            <p>There's no shortage of great hair care products at Eddy's, we've always
-              got you covered.</p>
-            <div class="col-md-6">
-              <ul class="list-group">
-                <li class="list-group-item" contenteditable="true">Beardology Beard Balm
-                  <span style="float:right">$8</span>
-                </li>
-                <li class="list-group-item">Beardology Beard Oil
-                  <span style="float:right">$12</span>
-                </li>
-                <li class="list-group-item">Chicago Classics Pomade
-                  <span style="float:right">$15</span>
-                </li>
-              </ul>
+            <div class="cover-image" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);background-image : url('img/products_cover')"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-primary">
+                                            <h1>PRODUCTS&nbsp;</h1>
+                                            <h3>Eddy's takes hair seriously. That's why we offer some serious hair products to keep your cut continually looking fresh with the latest from Baxter, Layrite, and others.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <ul class="list-group">
-                <li class="list-group-item">Fatboy
-                  <span style="float:right">$21</span>
-                </li>
-                <li class="list-group-item">Fatboy Toughguy
-                  <span style="float:right">$21</span>
-                </li>
-                <li class="list-group-item">Flexwax
-                  <span style="float:right">$21</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="modal fade" id="booking">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h2 class="modal-title" id="myModalLabel">
-              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT COVENTRY (216.795.5185)</h2>
-          </div>
-          <div class="modal-body">
-            <!-- Start Square Appointments Embed Code -->
-            <script src="https://squareup.com/appointments/buyer/widget/da8b8069-18e4-4892-a7be-98087b49eeee.js"></script>
-            <!-- End Square Appointments EmbedCode -->
-          </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>BAXTER OF CALIFORNIA</h1>
+                        <h3>GROOMING GENERATIONS OF GENTLEMEN</h3>
+                        <p>One of the original men's grooming brands created by Baxter Finley in
+                            1965. Cutting edge for its time, it started with a single product: Super
+                            Shape, a men's skin conditioner that offered protection from the sun and
+                            sea. This gender-specific breakthrough was no gimmick. Suddenly, guys got
+                            grooming. In the years since then, Baxter of California pioneered a comprehensive
+                            range of products tailored to a man’s needs. Years of research by our experts
+                            proved that all skin is not created equal. Our approach is science plus
+                            nature, built from the ground up in California. We may be old school in
+                            concept, but we’re high-tech in practice. Bottom line: Finley’s dry skin
+                            began a revolution. Baxter’s legacy meets advanced research: this is the
+                            evolution of men’s grooming.</p>
+                    </div>
+                    <div class="col-md-3 products">
+                        <ul class="list-group" style="border: 0px">
+                            <li class="list-group-item" contenteditable="true">Baxter After Shave Balm
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Anniversary Set
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Clay Pomade
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Daily Protein Shampoo
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Deodorant
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Smoke Ash Candle
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Soap Bar
+                                <span style="float:right">$18</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 products">
+                        <ul class="list-group">
+                            <li class="list-group-item" contenteditable="true">Baxter Hard Cream Pomade
+                                <span style="float:right">$20</span>
+                            </li>
+                            <li class="list-group-item">Baxter Moisturizing Conditioner
+                                <span style="float:right">$17</span>
+                            </li>
+                            <li class="list-group-item">Baxter Shave Brush
+                                <span style="float:right">$50</span>
+                            </li>
+                            <li class="list-group-item">Baxter Shave Kit
+                                <span style="float:right">$72</span>
+                            </li>
+                            <li class="list-group-item">Baxter Shave Tonic
+                                <span style="float:right">$15</span>
+                            </li>
+                            <li class="list-group-item">Baxter Super Close Shave Formula
+                                <span style="float:right">$18</span>
+                            </li>
+                            <li class="list-group-item">Baxter Travel Kit
+                                <span style="float:right">$50</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <footer class="section section-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h1>EDDY'S</h1>
-            <p>Eddy's Barbershop is a classic traditional barber shop, with locations
-              on the&nbsp;
-              <br>east side of Cleveland in the&nbsp;Coventry neighborhood and a soon-to-be
-              <br>announced location on the west side.
-              <br>
-              <br>The team of barbers,&nbsp;led by Chuck Falk, are experts in their field
-              with&nbsp;
-              <br>years of experience. Men can stop in for a quick cut or relax and enjoy&nbsp;
-              <br>with a 45-minute old-fashioned&nbsp;shave.</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="text-right footersocial">
-              <br>GET AT US, BE SOCIAL.</p>
-            <div class="row">
-              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
-                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
-              </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 products">
+                        <ul class="lead list-group">
+                            <li class="list-group-item">Layrite Cement
+                                <span style="float:right">$19</span>
+                            </li>
+                            <li class="list-group-item">Layrite Grooming Spray
+                                <span style="float:right">$10</span>
+                            </li>
+                            <li class="list-group-item">Layrite Original
+                                <span style="float:right">$15</span>
+                            </li>
+                            <li class="list-group-item">Layrite Super Hold
+                                <span style="float:right">$16</span>
+                            </li>
+                            <li class="list-group-item">Mini Layrite 1 oz
+                                <span style="float:right">$18</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>LAYRITE</h1>
+                        <h3>FINE GROOMING PRODUCTS</h3>
+                        <p>Every product that Layrite has created since it's first shop opened in
+                            1999 on has been produced with the customers’ feedback in mind. As a result,
+                            Layrite has become an American Fine Men’s Grooming Product company with
+                            a main focus on providing a “modernly classic” grooming product line. Today,
+                            Layrite resides in Orange County, California. All products are tested and
+                            approved by barbers in order to provide Layrite customers with only the
+                            finest pomades and grooming products. So, now that you know the story of
+                            how Layrite was born, you can experience for yourself the deluxe pomade
+                            that holds like wax and washes out like gel. Create the perfect style everytime.</p>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-md-12 hidden-xs text-right">
-                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                <a href="https://www.facebook.com/Eddys-Barbershop-577093205746554/"><i class="fa fa-3x fa-facebook fa-fw text-inverse"></i></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa fa-3x fa-fw fa-copyright"></i>
-              </div>
-              <div class="col-md-11">
-                <p>2015-2016 EDDYS BARBERSHOP
-                  <br>design by
-                  <a href="http://redband.digital" target="_blank"><span style="color:#D0412F">redband.digital</span></a>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </footer>
-
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>OTHER PRODUCTS</h1>
+                        <p>There's no shortage of great hair care products at Eddy's, we've always
+                            got you covered.</p>
+                        <div class="col-md-6 products">
+                            <ul class="list-group">
+                                <li class="list-group-item" contenteditable="true">Beardology Beard Balm
+                                    <span style="float:right">$8</span>
+                                </li>
+                                <li class="list-group-item">Beardology Beard Oil
+                                    <span style="float:right">$12</span>
+                                </li>
+                                <li class="list-group-item">Chicago Classics Pomade
+                                    <span style="float:right">$15</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 products">
+                            <ul class="list-group">
+                                <li class="list-group-item">Fatboy
+                                    <span style="float:right">$21</span>
+                                </li>
+                                <li class="list-group-item">Fatboy Toughguy
+                                    <span style="float:right">$21</span>
+                                </li>
+                                <li class="list-group-item">Flexwax
+                                    <span style="float:right">$21</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="booking">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2 class="modal-title" id="myModalLabel">
+                            <i class="fa fa-star fa-fw"></i>BOOK APPT. AT COVENTRY (216.795.5185)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Start Square Appointments Embed Code -->
+                        <script src="https://squareup.com/appointments/buyer/widget/da8b8069-18e4-4892-a7be-98087b49eeee.js"></script>
+                        <!-- End Square Appointments EmbedCode -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section section-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>EDDY'S</h1>
+                        <p>Eddy's Barbershop is a classic traditional barber shop, with locations
+                            on the&nbsp;
+                            <br>east side of Cleveland in the&nbsp;Coventry neighborhood and a soon-to-be
+                            <br>announced location on the west side.
+                            <br>
+                            <br>The team of barbers,&nbsp;led by Chuck Falk, are experts in their field
+                            with&nbsp;
+                            <br>years of experience. Men can stop in for a quick cut or relax and enjoy&nbsp;
+                            <br>with a 45-minute old-fashioned&nbsp;shave.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-right footersocial">
+                            <br>GET AT US, BE SOCIAL.</p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-right">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="https://www.facebook.com/Eddys-Barbershop-577093205746554/"><i class="fa fa-3x fa-facebook fa-fw text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fa fa-3x fa-fw fa-copyright"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <p>2015-2016 EDDYS BARBERSHOP
+                                    <br>design by
+                                    <a href="http://redband.digital" target="_blank"><span style="color:#D0412F">redband.digital</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
 
 </body></html>
