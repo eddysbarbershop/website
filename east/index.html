@@ -30,7 +30,7 @@
                 	$('.navbar-collapse').addClass('barT');
                   $('#navImg').attr('src','img/eddys_circle_black_nav.png').fadeTo(400,1);
                 	$('#navPh').css('color','black').fadeTo(400,1);
-  		$('#navBk').css('display','inline-block');
+                  $('#navBk').css('display','inline-block');
               } else {
                   $('.navbar').removeClass('opaque'); // removing the opaque class
                 	$('.navbar-collapse').removeClass('barT');
@@ -45,14 +45,20 @@
     <div class="cover">
       <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header hidden-md hidden-lg" style="height:80px">
+            <a href="tel:+12167955185" class="btn btn-lg btn-link disabled navbar-btn" style="color:white;margin-top:15px;opacity: 1" id="navPh">216.795.5185</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <img style="height:40px" class="img-responsive" alt="Eddy's Barbershop" src="img/eddys_circle_white_nav.png" id="navImg">
+            </button>
+          </div>
+          <div class="navbar-header hidden-sm hidden-xs">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar" id="navPh"></span>
-              <span class="icon-bar" id="navPh"></span>
-              <span class="icon-bar" id="navPh"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../"><img alt="Brand" src="img/eddys_circle_white_nav.png" height="20" id="navImg"></a>
+            <a class="hidden-sm hidden-xs navbar-brand" href="../"><img alt="Eddy's Barbershop" src="img/eddys_circle_white_nav.png" height="40" id="navImg"></a>
           </div>
           <div class="collapse navbar-collapse" id="navbar-ex-collapse">
             <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
