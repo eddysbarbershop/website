@@ -11,239 +11,33 @@
     <link href="eddys.css" rel="stylesheet" type="text/css">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+                      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
-              ga('create', 'UA-68950894-1', 'auto');
-              ga('send', 'pageview');
-    </script>
-    <script>
-      (function(){
-                                $(window).scroll(function() {
-
-                                    // check if window scroll for more than 430px. May vary
-                                    // as per the height of your main banner.
-
-                                    if($(this).scrollTop() > 50) {
-                                        $('.navbar').addClass('opaque'); // adding the opaque class
-                                      	$('.navbar-collapse').addClass('barT');
-                                        $('#navImg').attr('src','img/eddys_circle_black_nav.png').fadeTo(400,1);
-                                      	$('#navPh').css('color','black').fadeTo(400,1);
-                						$('#navBk').css('display','inline-block');
-                                    } else {
-                                        $('.navbar').removeClass('opaque'); // removing the opaque class
-                                      	$('.navbar-collapse').removeClass('barT');
-                                        $('#navImg').attr('src','img/eddys_circle_white_nav.png').fadeTo(400,1);
-                                      	$('#navPh').css('color','white').fadeTo(400,1);
-                                      	$('#navBk').css('display','none');
-                                    }
-                                });
-                              })();
+                      ga('create', 'UA-68950894-1', 'auto');
+                      ga('send', 'pageview');
     </script>
   </head><body>
     <div class="cover">
-      <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="hidden-sm hidden-xs navbar-brand" href="#"><img alt="Brand" src="img/eddys_circle_white_nav.png" height="40" id="navImg"></a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-            <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
-              <li class="active">
-                <a href="#barbers">BARBERS</a>
-              </li>
-              <li class="">
-                <a href="locations.html">LOCATIONS</a>
-              </li>
-              <li class="">
-                <a href="products.html">PRODUCTS</a>
-              </li>
-            </ul>
-            <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color:white;margin-top:10px;opacity: 1" id="navPh">216.795.5185</a>
-            <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
-          </div>
-        </div>
-      </div>
       <div class="cover-image" style="box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);background-image : url('img/10860852_651481598307714_7141937238448063003_o.jpg')"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center">
-            <img src="img/eddys_white_lrg.png" class="img-responsive" style="margin-top: 15%">
-            <br>
-            <br>
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <img src="img/eddys_white_lrg.png" class="img-responsive">
           </div>
-          <div class="col-md-6" style="padding-top:40px">
-            <h2 class="bookbox text-center text-primary">BOOK NOW</h2>
-            <a class="btn btn-block btn-primary locationbutton" style="background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onClick="ga('send', 'event', 'Booking', 'Click', 'East Side')">EAST SIDE</a>
-            <a class="btn btn-block btn-link disabled" data-target="#booking">COVENTRY ROAD</a>
-          </div>
-          <div class="col-md-6" style="padding-top:40px">
-            <a class="btn btn-block btn-primary locationbutton" style="background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#">WEST SIDE</a>
-            <a class="btn btn-block btn-link disabled" data-target="#">COMING SOON</a>
-          </div>
+          <div class="col-md-3"></div>
         </div>
-      </div>
-    </div>
-    <div class="modal fade" id="booking">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h2 class="modal-title" id="myModalLabel">
-              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT COVENTRY (216.795.5185)</h2>
-          </div>
-          <div class="modal-body">
-            <!-- Start Square Appointments Embed Code -->
-            <script src="https://squareup.com/appointments/buyer/widget/da8b8069-18e4-4892-a7be-98087b49eeee.js"></script>
-            <!-- End Square Appointments EmbedCode -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="barbers">
-      <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center">MEET YOUR BARBERS</h1>
-            <p class="text-center"></p>
+          <div class="col-md-4">
+            <a class="btn btn-block btn-primary wlocationbutton" style="background-color: transparent; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1000px inset;margin-bottom: 10px" href="west/index.html" onClick="ga('send', 'event', 'goWest', 'Click', 'goWest')">WEST SIDE</a>
+            <a class="btn btn-block btn-link disabled">NEW LOCATION NOW OPEN</a>
           </div>
-        </div>
-        <div class="col-md-3 member-inner">
-          <img src="img/testchuck.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
-          <h3 class="text-center">CHUCK FALK</h3>
-          <p class="text-center">Chuck became a barber to do more than just give a good hair cut. He wanted
-            to shed light on a very important style ...
-            <a style="color:#D0412F" data-toggle="modal" data-target="#chuck">READ MORE</a>
-          </p>
-        </div>
-        <div class="col-md-3">
-          <img src="img/testryan.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
-          <h3 class="text-center">RYAN HARDWICK&nbsp;</h3>
-          <p class="text-center">Eddy's barbershop resident funny guy, professional multi cultural barber,
-            punk rock musician, tattoo collector ...
-            <a style="color: #D0412F" data-toggle="modal" data-target="#ryan">READ MORE</a>
-          </p>
-        </div>
-        <div class="col-md-3">
-          <img src="img/testbobby.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
-          <h3 class="text-center">BOBBY BUSHAY</h3>
-          <p class="text-center">Master barber, hip hop enthusiast, sneaker head, diverse in all hair types
-            and textures. Cleveland native, born and...
-            <a style="color:#D0412F" data-toggle="modal" data-target="#bobby">READ MORE</a>
-          </p>
-        </div>
-        <div class="col-md-3">
-          <img src="img/testpatrick.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
-          <h3 class="text-center">PATRICK CORRIGAN</h3>
-          <p class="text-center">Patrick is the newest member of the shop. He has been cutting hair for
-            almost 2 years now. He prefers classic traditional...
-            <a style="color: #D0412F" data-toggle="modal" data-target="#patrick">READ MORE</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" style="margin-top: 10%" id="chuck">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <img src="img/chuck_working.png" class="img-responsive">
-            <br>
-            <p>Chuck became a barber to do more than just give a good hair cut. He wanted
-              to shed light on a very important style detail that most men were missing.
-              The feeling of looking their best.&nbsp;
-              <br>
-              <br>Anyone can give a&nbsp;haircut, but with good communication between the
-              patron and the barber everyone will be happy. Chuck will do his best to
-              educate his clients about how to wear their hair and what products to use.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="http://instagram.com/Chuckfalkbarber" target="_blank">
-            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float:left"></i>
-            </a>
-            <!-- Start Square Appointments Embed code -->
-            <a href="https://squareup.com/appointments/buyer/widget/090a3227-8570-4f6b-beb3-a59b5962a935" class="btn btn-info btn-lg" target="_blank">BOOK WITH CHUCK</a>
-            <!-- End Square Appointments Embed code -->
-            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" style="margin-top: 10%" id="ryan">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <img src="img/ryan_working.png" class="img-responsive">
-            <br>
-            <p>Eddy's barbershop resident funny guy, professional multi cultural barber,
-              punk rock musician, tattoo collector, radical dad to a wild four year old,
-              skilled at traditional American haircuts. Enjoy the luxuries of perfect
-              hair forever with a cut by Mr. Hardwick.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="http://instagram.com/hxcwick" target="_blank">
-            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
-            </a>
-            <!-- Start Square Appointments Embed code -->
-            <a href="https://squareup.com/appointments/buyer/widget/311c258c-16b2-408b-b67d-2f8d0b3fb188" class="btn btn-info btn-lg" target="_blank">BOOK WITH RYAN</a>
-            <!-- End Square Appointments Embed code -->
-            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" style="margin-top: 10%" id="bobby">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <img src="img/bobby_working.png" class="img-responsive">
-            <br>
-            <p>Master barber, hip hop enthusiast, sneaker head, diverse in all hair types
-              and textures. Cleveland native, born and raised. Saving and changing lives,
-              one haircut at a time.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="http://instagram.com/Bobby_thebarber_bushay" target="_blank">
-            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
-            </a>
-            <!-- Start Square Appointments Embed code -->
-            <a href="https://squareup.com/appointments/buyer/widget/696f5740-59a3-4415-b688-3472b979b8b9" class="btn btn-info btn-lg" target="_blank">BOOK WITH BOBBY</a>
-            <!-- End Square Appointments Embed code -->
-            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" style="margin-top: 10%" id="patrick">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <img src="img/patrick_working.png" class="img-responsive">
-            <br>
-            <p>Patrick is the newest member of the shop. He has been cutting hair for
-              almost 2 years now. He prefers classic traditional barbering influenced
-              by 50's old school such as High Pompadours, Side Part variations, Princetons
-              and Flat-tops.&nbsp;
-              <br>
-              <br>Patrick mostly enjoys talking about vintage&nbsp;guitars, The Rolling
-              Stones or The Eagles. And when he is not in the shop he can be found pickin'
-              the guitar for his local band Thirteen Cadillacs or out on the road with
-              Chicago rockers The Wabash Cannonballs.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="http://instagram.com/Patrick_corrigan_barber" target="_blank">
-            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
-            </a>
-			<!-- Start Square Appointments Embed code -->
-            <a href="https://squareup.com/appointments/buyer/widget/0513d6c4-c4fb-4b03-afbb-588fad15369f" class="btn btn-info btn-lg" target="_blank">BOOK WITH PATRICK</a>
-            <!-- End Square Appointments Embed code -->
-            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <a class="btn btn-block btn-primary elocationbutton" style="background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" href="east/index.html" onClick="ga('send', 'event', 'goEast', 'Click', 'goEast')">EAST SIDE</a>
+            <a class="btn btn-block btn-link disabled">COVENTRY ROAD</a>
           </div>
         </div>
       </div>
@@ -254,47 +48,30 @@
           <div class="col-sm-6">
             <h1>EDDY'S</h1>
             <p>Eddy's Barbershop is a classic traditional barber shop, with locations
-              on the&nbsp;
-              <br>east side of Cleveland in the&nbsp;Coventry neighborhood and a soon-to-be
-              <br>announced location on the west side.
-              <br>
-              <br>The team of barbers,&nbsp;led by Chuck Falk, are experts in their field
-              with&nbsp;
-              <br>years of experience. Men can stop in for a quick cut or relax and enjoy&nbsp;
-              <br>with a 45-minute old-fashioned&nbsp;shave.</p>
+              on the East and West Sides of Cleveland. The team of barbers, led by Chuck Falk, are experts in their field with
+              years of experience. Men can stop in for a quick cut or relax and enjoy
+              with a 45-minute old-fashioned shave.</p>
           </div>
           <div class="col-sm-6">
-            <p class="text-right footersocial">
-              <br>GET AT US, BE SOCIAL</p>
-            <div class="row">
-              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
-                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 hidden-xs text-right">
+            <div class="row text-right">
+              <h1>GET AT US, BE SOCIAL</h1>
+              <div class="col-md-12" style="padding-bottom:15px">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
                 <a href="https://www.facebook.com/Eddys-Barbershop-577093205746554/"><i class="fa fa-3x fa-facebook fa-fw text-inverse"></i></a>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa fa-3x fa-fw fa-copyright"></i>
-              </div>
-              <div class="col-md-11">
-                <p>2015-2016 EDDYS BARBERSHOP
+            <div class="row text-right">
+              <div class="col-md-12">
+                <i class="fa fa-fw fa-copyright"></i> 2016 EDDYS BARBERSHOP
                   <br>design by
                   <a href="http://redband.digital" target="_blank"><span style="color:#D0412F">redband.digital</span></a>
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
 
 
 </body></html>

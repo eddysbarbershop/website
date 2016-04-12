@@ -1,0 +1,350 @@
+<html><head>
+    <link rel="icon" href="../favicon.ico">
+    <meta name="keywords" content="Eddy's Barbershop, Cleveland barber, Coventry barber, Cleveland barbershop">
+    <title>Eddy's Barbershop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--script type="text/javascript" src="eddys.js"></script-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../eddys.css" rel="stylesheet" type="text/css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68950894-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      (function(){
+          $(window).scroll(function() {
+
+              // check if window scroll for more than 430px. May vary
+              // as per the height of your main banner.
+
+              if($(this).scrollTop() > 50) {
+                  $('.navbar').addClass('wopaque'); // adding the opaque class
+                	$('.navbar-collapse').addClass('barT');
+                  $('#navImg').attr('src','img/eddys_circle_black_nav.png').fadeTo(400,1);
+                	$('#navPh').css('color','black').fadeTo(400,1);
+			$('#navBk').css('display','inline-block');
+              } else {
+                  $('.navbar').removeClass('wopaque'); // removing the opaque class
+                	$('.navbar-collapse').removeClass('barT');
+                  $('#navImg').attr('src','img/eddys_circle_nav_gold.png').fadeTo(400,1);
+                	$('#navPh').css('color','white').fadeTo(400,1);
+                	$('#navBk').css('display','none');
+              }
+          });
+        })();
+    </script>
+  </head><body>
+    <div class="cover">
+      <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="hidden-sm hidden-xs navbar-brand" href="../index.html"><img alt="Brand" src="img/eddys_circle_nav_gold.png" height="40" id="navImg"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
+              <li class="active">
+                <a href="#barbers">BARBERS</a>
+              </li>
+              <li class="">
+                <a href="#location">LOCATION</a>
+              </li>
+              <!-- <li class="">
+                <a href="products.html">PRODUCTS</a>
+              </li> -->
+            </ul>
+            <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color:white;margin-top:10px;opacity: 1" id="navPh">216.459.7575</a>
+            <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
+          </div>
+        </div>
+      </div>
+      <div class="cover-image" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);background-image: url('img/west_new_1.jpg')"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="img/eddys_white_gold.png" class="img-responsive" style="margin-top: 15%">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="height:5%">&nbsp;</div>
+            <div class="row">&nbsp;</div>
+            <div class="row"><h2 class="bookbox text-center text-primary">WEST SIDE</h2>
+            <a class="btn btn-block btn-primary wlocationbutton" style="background-color: transparent; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onclick="ga('send', 'event', 'westBooking', 'Click', 'West Side')">BOOK NOW</a>
+            <a class="btn btn-block btn-link disabled" data-target="#booking">CLIFTON BOULEVARD</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="booking">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title" id="myModalLabel">
+              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT CLIFTON (WEST) (216.459.7575)</h2>
+          </div>
+          <div class="modal-body">
+            <!-- Start Square Appointments Embed Code -->
+            <script src="https://squareup.com/appointments/buyer/widget/5d26fa75-9093-4b48-a881-2c41d6766a54.js"></script>
+            <!-- End Square Appointments EmbedCode -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="barbers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">MEET YOUR BARBERS</h1>
+            <p class="text-center"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img src="img/testryan.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+          <h3 class="text-center">RYAN HARDWICK&nbsp;</h3>
+          <p class="text-center">Eddy's barbershop resident funny guy, professional multi-cultural barber,
+            punk rock musician, tattoo collector...
+            <!-- <a style="color: #D0412F" data-toggle="modal" data-target="#ryan">READ MORE</a> -->
+            <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#ryan" data-toggle="modal">READ MORE</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/testpatrick.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+          <h3 class="text-center">PATRICK CORRIGAN</h3>
+          <p class="text-center">Excited to bring a great haircut to the West Side, Patrick prefers classic traditional
+            barbering influenced by 50's old...
+            <!-- <a style="color: #D0412F" data-toggle="modal" data-target="#patrick">READ MORE</a> -->
+            <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#patrick" data-toggle="modal">READ MORE</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/testbryan.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+          <h3 class="text-center">BRYAN McCOMAS</h3>
+          <p class="text-center">Professional multi-cultural barber and cosmetologist, pizza lover, horror
+            movie collector, family man and...
+            <!-- <a style="color:#D0412F" data-toggle="modal" data-target="#bryan">READ MORE</a> -->
+            <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#bryan" data-toggle="modal">READ MORE</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/testkevin.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+          <h3 class="text-center">KEVIN BACIK</h3>
+          <p class="text-center">Kevin is a father, husband and drummer. He is a stylist specializing in
+            men's grooming, giving a polished haircut sculpted...
+            <!-- <a style="color:#D0412F" data-toggle="modal" data-target="#kevin">READ MORE</a> -->
+            <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#kevin" data-toggle="modal">READ MORE</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" style="margin-top: 10%" id="ryan">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="img/ryan_working.png" class="img-responsive">
+            <br>
+            <p>Eddy's barbershop resident funny guy, professional multi cultural barber,
+              punk rock musician, tattoo collector, radical dad to a wild four year old,
+              skilled at traditional American haircuts. Enjoy the luxuries of perfect
+              hair forever with a cut by Mr. Hardwick.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://instagram.com/hxcwick" target="_blank">
+            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float:left"></i>
+            </a>
+            <!-- Start Square Appointments Embed code -->
+            <a href="https://squareup.com/appointments/buyer/widget/7b874c79-5363-4cf6-b393-ec142ec1c651" class="btn btn-info btn-lg" target="_blank" onClick="ga('send', 'event', 'bookRyan', 'Click', 'bookRyan')">BOOK WITH RYAN</a>
+            <!-- End Square Appointments Embed code -->
+            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" style="margin-top: 10%" id="patrick">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="img/patrick_working.png" class="img-responsive">
+            <br>
+            <p>Excited to bring a great haircut to the West Side, Patrick prefers classic traditional
+              barbering influenced by 50's old school such as High Pompadours, Side Part variations,
+              Under-cuts and fades.  Patrick mostly enjoys talking about vintage guitars, The Rolling Stones
+              or The Eagles.  When he is not in the shop he can be found pickin' the guitar for his local
+              band Thirteen Cadillacs or out on the road with Chicago rockers The Wabash Cannonballs.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://instagram.com/Patrick_corrigan_barber" target="_blank">
+            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
+            </a>
+            <!-- Start Square Appointments Embed code -->
+            <a href="https://squareup.com/appointments/buyer/widget/27dc4124-2221-4802-a1f7-3c50b4a982bb" class="btn btn-info btn-lg" target="_blank" onClick="ga('send', 'event', 'bookPatrick', 'Click', 'bookPatrick')">BOOK WITH PATRICK</a>
+            <!-- End Square Appointments Embed code -->
+            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" style="margin-top: 10%" id="bryan">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- <img src="img/bryan_working.png" class="img-responsive"> -->
+            <br>
+            <p>Professional multi-cultural barber and cosmetologist, pizza lover, horror
+            movie collector, family man and soon to be father. Specialized in giving
+            quality, custom haircuts. Relax and enjoy a great haircut and a firm handshake.</p>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="http://instagram.com/Bobby_thebarber_bushay" target="_blank">
+            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
+            </a> -->
+            <!-- Start Square Appointments Embed code -->
+            <a href="https://squareup.com/appointments/buyer/widget/70888575-9412-4110-9798-8238c5a58cf6" class="btn btn-info btn-lg" target="_blank" onClick="ga('send', 'event', 'bookBryan', 'Click', 'bookBryan')">BOOK WITH BRYAN</a>
+            <!-- End Square Appointments Embed code -->
+            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" style="margin-top: 10%" id="kevin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- <img src="img/kevin_working.png" class="img-responsive"> -->
+            <br>
+            <p>Kevin is a father, husband and drummer. He is a stylist specializing in men's
+              grooming, giving a polished haircut sculpted to fit you. Classic style with a modern edge.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://instagram.com/kevinbacik" target="_blank">
+            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
+            </a>
+            <!-- Start Square Appointments Embed code -->
+            <a href="https://squareup.com/appointments/buyer/widget/1eecb3a0-31e2-41a0-aa96-f54d81a0c480" class="btn btn-info btn-lg" target="_blank" onClick="ga('send', 'event', 'bookKevin', 'Click', 'bookKevin')">BOOK WITH KEVIN</a>
+            <!-- End Square Appointments Embed code -->
+            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="cover-image" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);background-image : url('img/west_new_2.jpg')"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section" id="location">
+              <div class="container">
+                <div class="row" style="margin-top:55px">
+                  <div class="col-md-6">
+                    <h1 class="text-primary" style="margin-bottom: 50px">WEST SIDE</h1>
+                    <h3 style="color:#fcfcfc">CLIFTON</h3>
+                    <div class="col-xs-6">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="text-primary">MONDAY</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">TUESDAY</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">WEDNESDAY</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">THURSDAY</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">FRIDAY</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">SATURDAY</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">SUNDAY</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="text-primary">CLOSED</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">11:00 - 7:00PM</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">11:00 - 7:00PM</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">11:00 - 7:00PM</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">11:00 - 7:00PM</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">10:00 - 6:00PM</p>
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-primary">CLOSED</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="text-primary">Eddy's Barber Shop&nbsp;
+                      <br>11629 Clifton Blvd&nbsp;
+                      <br>Cleveland, OH 44102</p>
+                    <img class="img-responsive" src="http://maps.googleapis.com/maps/api/staticmap?center=41.4874865,-81.7685338&amp;zoom=16&amp;size=500x500&amp;markers=color:red%7Clabel:%7C41.4874865,-81.7685338&amp;scale=2;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>EDDY'S</h1>
+            <p>Eddy's Barbershop is a classic traditional barber shop, with locations
+              on the East and West Sides of Cleveland. The team of barbers, led by Chuck Falk, are experts in their field with
+              years of experience. Men can stop in for a quick cut or relax and enjoy
+              with a 45-minute old-fashioned shave.</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="row text-right">
+              <h1>GET AT US, BE SOCIAL</h1>
+              <div class="col-md-12" style="padding-bottom:15px">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="https://www.facebook.com/Eddys-Barbershop-577093205746554/"><i class="fa fa-3x fa-facebook fa-fw text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row text-right">
+              <div class="col-md-12">
+                <i class="fa fa-fw fa-copyright"></i>2016 EDDYS BARBERSHOP
+                <br>design by
+                <a href="http://redband.digital" target="_blank"><span style="color:#D0412F">redband.digital</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+</body></html>
