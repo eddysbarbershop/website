@@ -3311,9 +3311,9 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  color: #ffffff;
+  color: #96874a;
   background-color: #1a1a1a;
-  border-color: #080808;
+  border-color: #d4d4d4;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3377,7 +3377,6 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled.focus,
 .btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning.focus,
-.btn-warning.disabled:active,
 .btn-warning[disabled]:active,
 fieldset[disabled] .btn-warning:active,
 .btn-warning.disabled.active,
@@ -3447,6 +3446,7 @@ fieldset[disabled] .btn-danger.active {
 fieldset[disabled] .btn-link {
   background-color: transparent;
   -webkit-box-shadow: none;
+  .btn-warning.disabled:active,
   box-shadow: none;
 }
 .btn-link,
@@ -6911,10 +6911,18 @@ body {
   padding: 10px;
   border: 3px solid white;
 }
-.elocationbutton {
+.covlocationbutton {
   font-size: 60px;
   font-weigth: 500;
   color: white;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 0px;
+}
+.vanakenlocationbutton {
+  font-size: 60px;
+  font-weigth: 500;
+  color: #898B81;
   border: 3px solid white;
   padding: 10px;
   border-radius: 0px;

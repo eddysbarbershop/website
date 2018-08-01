@@ -1,0 +1,146 @@
+<html><head>
+    <link rel="icon" href="../../favicon.ico">
+    <meta name="keywords" content="Eddy's Barbershop, Cleveland barber, Coventry barber, Cleveland barbershop">
+    <title>Eddy's Barbershop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--script type="text/javascript" src="eddys.js"></script-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../eddys.css" rel="stylesheet" type="text/css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68950894-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      (function(){
+          $(window).scroll(function() {
+
+              // check if window scroll for more than 430px. May vary
+              // as per the height of your main banner.
+
+              if($(this).scrollTop() > 50) {
+                  $('.navbar').addClass('opaque'); // adding the opaque class
+                	$('.navbar-collapse').addClass('barT');
+                  $('#navImg').attr('src','img/eddys_circle_black_nav.png').fadeTo(400,1);
+                	$('#navPh').css('color','black').fadeTo(400,1);
+                  $('#navBk').css('display','inline-block');
+              } else {
+                  $('.navbar').removeClass('opaque'); // removing the opaque class
+                	$('.navbar-collapse').removeClass('barT');
+                  $('#navImg').attr('src','img/eddys_circle_white_nav.png').fadeTo(400,1);
+                	$('#navPh').css('color','white').fadeTo(400,1);
+                	$('#navBk').css('display','none');
+              }
+          });
+        })();
+    </script>
+  </head><body>
+    <div class="cover">
+      <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
+        <div class="container">
+          <div class="navbar-header hidden-md hidden-lg" style="height:80px">
+            <a href="tel:+12167955185" class="btn btn-lg btn-link disabled navbar-btn" style="color:white;margin-top:15px;opacity: 1" id="navPh">216.xxx.xxxx</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <img style="height:40px" class="img-responsive" alt="Eddy's Barbershop" src="img/nav_circle_1481.png" id="navImg">
+            </button>
+          </div>
+          <div class="navbar-header hidden-sm hidden-xs">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="hidden-sm hidden-xs navbar-brand" href="../../"><img alt="Eddy's Barbershop" src="img/nav_circle_1481.png" height="40" id="navImg"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
+              <!-- <li class="active">
+                <a href="#barbers">BARBERS</a>
+              </li>
+              <li class="">
+                <a href="index.html#location">LOCATION</a>
+              </li>
+              <li class="">
+                <a href="products.html">PRODUCTS</a>
+              </li> -->
+            </ul>
+            <!-- <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color:white;margin-top:10px;opacity: 1" id="navPh">216.795.5185</a> -->
+            <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
+          </div>
+        </div>
+      </div>
+      <div class="cover-image" style="box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);background-image : url('img/IMG-3701.JPG')"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="img/eddys_1481_lrg.png" class="img-responsive" style="margin-top: 15%">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="height:5%">&nbsp;</div>
+            <div class="row">&nbsp;</div>
+            <div class="row"><h2 class="bookbox text-center text-primary">EAST SIDE</h2>
+            <a class="btn btn-block btn-primary vanakenlocationbutton" style="color: #96874a; background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onClick="ga('send', 'event', 'eastBooking', 'Click', 'East Side')" disabled>COMING SOON</a>
+            <a class="btn btn-block btn-link disabled" data-target="#booking">VAN AKEN</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="booking">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title" id="myModalLabel">
+              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT COVENTRY (EAST) (216.795.5185)</h2>
+          </div>
+          <div class="modal-body">
+            <!-- Start Square Appointments Embed Code -->
+            <script src="https://squareup.com/appointments/buyer/widget/da8b8069-18e4-4892-a7be-98087b49eeee.js"></script>
+            <!-- End Square Appointments EmbedCode -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="section section-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>EDDY'S</h1>
+            <p>Eddy's Barbershop is a classic traditional barber shop, with locations
+              on the East and West Sides of Cleveland. The team of barbers, led by Chuck Falk, are experts in their field with
+              years of experience. Men can stop in for a quick cut or relax and enjoy
+              with a 45-minute old-fashioned shave.</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="row text-right">
+              <h1>GET AT US, BE SOCIAL</h1>
+              <div class="col-md-12" style="padding-bottom:15px">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="https://www.facebook.com/Eddys-Barbershop-577093205746554/"><i class="fa fa-3x fa-facebook fa-fw text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row text-right">
+              <div class="col-md-12">
+                <i class="fa fa-fw fa-copyright"></i> 2016 EDDYS BARBERSHOP
+                  <br>design by
+                  <a href="http://redband.digital" target="_blank"><span style="color:#D0412F">redband.digital</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+</body></html>
