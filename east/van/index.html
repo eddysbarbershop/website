@@ -46,7 +46,7 @@
       <div class="navbar navbar-inverse navbar-static-top" style="position: fixed">
         <div class="container">
           <div class="navbar-header hidden-md hidden-lg" style="height:80px">
-            <!-- <a href="tel:+12167955185" class="btn btn-lg btn-link disabled navbar-btn" style="color:white;margin-top:15px;opacity: 1" id="navPh">216.xxx.xxxx</a> -->
+            <a href="tel:+12167955185" class="btn btn-lg btn-link disabled navbar-btn" style="color:white;margin-top:15px;opacity: 1" id="navPh">216.795.5185</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
             <img style="height:40px" class="img-responsive" alt="Eddy's Barbershop" src="img/nav_circle_1481.png" id="navImg">
             </button>
@@ -62,17 +62,17 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar-ex-collapse">
             <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
-              <!-- <li class="active">
+              <li class="active">
                 <a href="#barbers">BARBERS</a>
               </li>
-              <li class="">
+              <!-- <li class="">
                 <a href="index.html#location">LOCATION</a>
               </li>
               <li class="">
                 <a href="products.html">PRODUCTS</a>
               </li> -->
             </ul>
-            <!-- <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color:white;margin-top:10px;opacity: 1" id="navPh">216.795.5185</a> -->
+            <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color:gray;margin-top:10px;opacity: 1" id="navPh">216.795.5185</a>
             <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
           </div>
         </div>
@@ -89,7 +89,7 @@
             <div class="row" style="height:5%">&nbsp;</div>
             <div class="row">&nbsp;</div>
             <div class="row"><h2 class="bookbox text-center text-primary">VAN AKEN</h2>
-            <a class="btn btn-block btn-primary vanakenlocationbutton" style="color: #96874a; background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onClick="ga('send', 'event', 'eastBooking', 'Click', 'East Side')" disabled>COMING SOON</a>
+            <a class="btn btn-block btn-primary vanakenlocationbutton" style="color: #96874a; background-color: transparent; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onClick="ga('send', 'event', 'eastBooking', 'Click', 'East Side')">BOOK NOW</a>
             <a class="btn btn-block btn-link disabled" data-target="#booking">EAST SIDE</a></div>
           </div>
         </div>
@@ -101,21 +101,101 @@
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             <h2 class="modal-title" id="myModalLabel">
-              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT COVENTRY (EAST) (216.795.5185)</h2>
+              <i class="fa fa-star fa-fw"></i>BOOK APPT. AT VAN AKEN (EAST) (216.795.5185)</h2>
           </div>
           <div class="modal-body">
             <!-- Start Square Appointments Embed Code -->
-            <script src="https://squareup.com/appointments/buyer/widget/da8b8069-18e4-4892-a7be-98087b49eeee.js"></script>
+            <script src="https://squareup.com/appointments/buyer/widget/0d8af3cb-5aed-4c0f-9a12-8d1f17f8d328/V99KE69D604NT.js"></script>
             <!-- End Square Appointments EmbedCode -->
           </div>
         </div>
       </div>
     </div>
-
+    <div class="section" id="barbers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1 class="text-center">MEET YOUR BARBERS</h1>
+            <p class="text-center"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="col-md-2">
+          <img src="img/testchuck.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+          <h3 class="text-center">CHUCK FALK</h3>
+          <p class="text-center">Chuck became a barber to do more than just give a good hair cut. He wanted
+            to shed...
+            <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#chuck" data-toggle="modal">READ MORE</a>
+            <!-- <a style="color:#D0412F" data-toggle="modal" data-target="#chuck">READ MORE</a> -->
+          </p>
+        </div>
+        <div class="col-md-2">
+          <img src="img/testrick.png" class="center-block img-circle img-responsive" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+          <h3 class="text-center">RICKY ZABOROWSKI</h3>
+          <p class="text-center">Ricky is a traditional barber with a modern edge. Meticulous in every detail, from long
+           trim men's cuts...
+            <!-- <a style="color: #D0412F" data-toggle="modal" data-target="#pat">READ MORE</a> -->
+            <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#ricky" data-toggle="modal">READ MORE</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" style="margin-top: 10%" id="chuck">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="img/chuck_working.png" class="img-responsive">
+            <br>
+            <p>Chuck became a barber to do more than just give a good hair cut. He wanted
+              to shed light on a very important style detail that most men were missing.
+              The feeling of looking their best.&nbsp;
+              <br>
+              <br>Anyone can give a&nbsp;haircut, but with good communication between the
+              patron and the barber everyone will be happy. Chuck will do his best to
+              educate his clients about how to wear their hair and what products to use.
+              <br>
+              <br>As of 1-1-18 Chuck will be raising his price to $30 for a haircut</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://instagram.com/Chuckfalkbarber" target="_blank">
+            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float:left"></i>
+            </a>
+            <!-- Start Square Appointments Embed code -->
+            <a href="https://squareup.com/appointments/buyer/widget/57814c49-9434-4d5e-bc79-be7e390e6052/V99KE69D604NT" class="btn btn-info btn-lg" target="_blank" onClick="ga('send', 'event', 'bookChuck', 'Click', 'bookChuck')">BOOK WITH CHUCK</a>
+            <!-- End Square Appointments Embed code -->
+            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" style="margin-top: 10%" id="ricky">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- <img src="img/patrick_working.png" class="img-responsive"> -->
+            <br>
+            <p>Ricky is a traditional barber with a modern edge. Meticulous in every detail,
+            from long trim men's cuts to high and tight bald fades, leaving you with a great
+            haircut every time. Always seeking continuing education to stay on the latest
+	    styles and trends, Ricky will make certain you leave with a cut that is right for you.</p>
+          </div>
+          <div class="modal-footer">
+            <!--a href="http://instagram.com/Stevethebarber216" target="_blank">
+            <i class="fa fa-3x fa-fw fa-instagram text-info" style="float: left"></i>
+            </a-->
+            <!-- Start Square Appointments Embed code -->
+            <a href="https://squareup.com/appointments/buyer/widget/2701807b-c114-4c52-a812-b17a843ba8fa/V99KE69D604NT" class="btn btn-info btn-lg" target="_blank" onClick="ga('send', 'event', 'bookRicky', 'Click', 'bookRicky')">BOOK WITH RICKY</a>
+            <!-- End Square Appointments Embed code -->
+            <a class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="section section-info">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <h1>EDDY'S</h1>
             <p>Eddy's Barbershop is a classic traditional barber shop, with locations
               on the East and West Sides of Cleveland. The team of barbers, led by Chuck Falk, are experts in their field with
