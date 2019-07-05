@@ -73,7 +73,8 @@
               </li> -->
             </ul>
             <a class="btn btn-lg btn-link disabled hidden-sm hidden-xs navbar-btn" style="color:white;margin-top:10px;opacity: 1" id="navPh">216.459.7575</a>
-            <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a>
+            <!-- <a class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk" data-toggle="modal" data-target="#booking">BOOK &nbsp; APPT.</a> -->
+            <a href="#barbers" class="active btn btn-info btn-lg navbar-btn" style="display:none;margin-top:10px;opacity: 1" id="navBk">BOOK &nbsp; APPT.</a>
           </div>
         </div>
       </div>
@@ -89,7 +90,8 @@
             <div class="row" style="height:5%">&nbsp;</div>
             <div class="row">&nbsp;</div>
             <div class="row"><h2 class="bookbox text-center text-primary">WEST SIDE</h2>
-            <a class="btn btn-block btn-primary wlocationbutton" style="background-color: transparent; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onclick="ga('send', 'event', 'westBooking', 'Click', 'West Side')">BOOK NOW</a>
+            <!-- <a class="btn btn-block btn-primary wlocationbutton" style="background-color: transparent; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1000px inset;" data-toggle="modal" data-target="#booking" onclick="ga('send', 'event', 'westBooking', 'Click', 'West Side')">BOOK NOW</a> -->
+            <a href="#barbers" class="btn btn-block btn-primary wlocationbutton" style="background-color: transparent; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1000px inset;" onclick="ga('send', 'event', 'westBooking', 'Click', 'West Side')">BOOK NOW</a>
             <a class="btn btn-block btn-link disabled" data-target="#booking">CLIFTON BOULEVARD</a></div>
           </div>
         </div>
@@ -114,9 +116,9 @@
     <div class="section" id="barbers">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center">MEET YOUR BARBERS</h1>
-            <p class="text-center"></p>
+          <div class="col-md-12" style="margin-bottom: 25px">
+            <h1 class="text-center">MEET THE CREW</h1>
+            <p class="text-center">PLEASE SELECT YOUR BARBER TO BOOK</p>
           </div>
         </div>
 
@@ -125,7 +127,6 @@
           <h3 class="text-center">BRYAN McCOMAS</h3>
           <p class="text-center">Professional multi-cultural barber and cosmetologist, pizza lover, horror
             movie collector, family man and...
-            <!-- <a style="color:#D0412F" data-toggle="modal" data-target="#bryan">READ MORE</a> -->
             <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#bryan" data-toggle="modal">READ MORE</a>
           </p>
         </div>
@@ -134,7 +135,6 @@
           <h3 class="text-center">DOROTHY BAUGHMAN</h3>
           <p class="text-center">Originally from Ohio, most recently moved back to the mainland from Hawaii.
             I like to travel, surf, and also enjoy...
-            <!-- <a style="color: #D0412F" data-toggle="modal" data-target="#pat">READ MORE</a> -->
             <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#dorothy" data-toggle="modal">READ MORE</a>
           </p>
         </div>
@@ -143,7 +143,6 @@
           <h3 class="text-center">TYLER SHAW</h3>
           <p class="text-center">Tyler is a modern barber with traditional sensibilities. Attention
             to detail is his calling card and...
-            <!-- <a style="color: #D0412F" data-toggle="modal" data-target="#pat">READ MORE</a> -->
             <a style="color:#D0412F;padding:0px" class="btn btn-link" data-target="#tyler" data-toggle="modal">READ MORE</a>
           </p>
         </div>
@@ -153,7 +152,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
-            <!-- <img src="img/bryan_working.png" class="img-responsive"> -->
+            <img src="img/testbryan.png" class="img-responsive">
             <br>
             <p>Professional multi-cultural barber and cosmetologist, pizza lover, horror
             movie collector, family man and soon to be father. Specialized in giving
@@ -285,7 +284,7 @@
                     <p class="text-primary">Eddy's Barber Shop&nbsp;
                       <br>11629 Clifton Blvd&nbsp;
                       <br>Cleveland, OH 44102</p>
-                    <img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=41.4874865,-81.7685338&amp;zoom=16&amp;size=500x500&amp;markers=color:red%7Clabel:%7C41.4874865,-81.7685338&amp;scale=2;">
+                    <img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=41.4874865,-81.7685338&amp;zoom=16&amp;size=500x500&amp;markers=color:red%7Clabel:%7C41.4874865,-81.7685338&amp;scale=2;&key=AIzaSyBen6C4F53SppSOw23iHVYmX6YAVoxTCfk">
                   </div>
                 </div>
               </div>
